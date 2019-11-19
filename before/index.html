@@ -15,8 +15,21 @@
 
     <div class="container">
         <header class="header">
-            <h1>Web Cafe</h1>
-            <p>blar...</p>
+            <h1 class="logo"><a href="./index.html"><img src="./images/rwd-logo.png" alt="Web Cafe"></a></h1>
+      <ul class="member">
+        <li><a href="#">로그인</a><span class="divider" aria-hidden="true"></span>|</li>
+        <li><a href="#">회원가입</a><span class="divider" aria-hidden="true"></span>|</li>
+        <li><a href="#">커뮤니티</a></li>
+      </ul>
+            <h2 class="a11y-hidden">검색</h2>
+      <form  class="search-form" action="https://formspree.io/seulbinim@gmail.com" method="POST">
+        <fieldset>
+          <legend>검색</legend>
+          <input type="search" aria-label="검색어" name="search" required placeholder="검색어를 입력하세요.">
+          <button type="submit" class="button buttonSearch">검색</button>
+        </fieldset>
+      </form>
+
         </header>
         <nav class="navigation">네비게이션</nav>
         <main class="main">
