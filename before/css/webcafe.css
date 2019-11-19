@@ -1,6 +1,69 @@
 @charset "utf-8";
-
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 body{
+    background-color: #ffffff;
+}
+
+/* 컨테이너 */
+.container {
+    background-color: #c0c0c0;
+    display: flex;
+}
+
+/*헤더*/
+.header {
     background-color: #ffff00;
+    width: 1000px;
+    height: 10vh;
+    /*margin: 0 0 0 auto;*/
+}
+
+/*네비게이터*/
+.navigation {
+    background-color: #ffa500;
+    height: 10vh;
+}
+
+/*메인*/
+.main {
+    background-color: #0000ff;
+    height: 60vh;
+    display: flex;
+    flex-flow: row wrap;
+    /*flex-direction: row;*/
+    /*float-wrap: wrap;*/
+}
+
+/*책*/
+.book {
+    background-color: #00ff00;
+}
+
+/*주요 뉴스*/
+.news {
+    background-color: #87ceed;
+}
+
+/*게시판*/
+.board {
+    background-color: #d2b48c;
+}
+
+/*인기 사이트*/
+.favorite {
+    background-color: #cd919e;
+}
+
+/*트위터*/
+.twitter {
+    background-color: #008080;
+}
+
+/*푸터*/
+.footer {
+    background-color: #f9829b;
+    height: 20vh;
 }

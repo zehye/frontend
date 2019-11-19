@@ -1,1 +1,27 @@
 /* Mobile Layout */
+.container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header, .navigation, .main, .footer {
+    width: 100%;
+}
+
+.book, .news, .twitter {
+    width: 100%;
+    /*flex-basis: 0;*/
+    /*flex-grow: 1;*/
+}
+
+.board, .favorite {
+    width: 50%;
+}
+
+.book {
+    /*flex-shrink: 2;*/
+    /*flex-grow: 3;*/
+}
+.navigation {
+    order: 1;
+}

@@ -1,1 +1,38 @@
 /* Desktop Layout */
+
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header, .main {
+    width: 1000px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+.main {
+    justify-content: space-between;
+    /*align-content: center;*/
+}
+
+.navigation, .footer {
+    width: 100%;
+}
+
+.book, .board {
+    width: 320px;
+}
+
+.news {
+    width: 660px;
+}
+
+.twitter {
+    width: 400px;
+}
+
+.favorite {
+    width: 240px;
+    order: 1;
+}
