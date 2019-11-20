@@ -1,25 +1,14 @@
 @charset "utf-8";
-
-/*숨김 콘텐츠*/
-.a11y-hidden, legend {
-    /*background-color: #0000ff;*/
-    /*display: none;*/
-    position: absolute;
-    /*top: 50px;*/
-    /*left: 100px;*/
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    clip-path: polygon(0 0, 0 0, 0 0);
-}
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+@import url('./module/module.css');
+@import url('./module/a11y.css');
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 a {
-    color: #ffffff;
+    /*color: #ffffff;*/
 }
 
 html {
@@ -29,26 +18,15 @@ html {
 body{
     background-color: #ffffff;
     font-size: 1.4rem;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    font-weight: 400;
+    color: #000000;
 }
 
 /* 컨테이너 */
 .container {
-    background-color: #c0c0c0;
+    /*background-color: #c0c0c0;*/
     display: flex;
-}
-
-/*헤더*/
-.header {
-    background-color: #ffff00;
-    width: 1000px;
-    /*height: 10vh;*/
-    /*margin: 0 0 0 auto;*/
-}
-
-/*네비게이터*/
-.navigation {
-    background-color: #ffa500;
-    height: 10vh;
 }
 
 /*메인*/

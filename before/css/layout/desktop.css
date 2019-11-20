@@ -1,11 +1,10 @@
 /* Desktop Layout */
-
 .container {
     flex-direction: column;
     align-items: center;
 }
 
-.header, .main {
+.header, .main, .menu-list{
     width: 1000px;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
@@ -36,3 +35,117 @@
     width: 240px;
     order: 1;
 }
+
+.header {
+    position: relative;
+    padding-bottom: 1.5em;
+}
+
+.logo {
+    /*background: hsla(210, 50%, 50%, 0.5);*/
+    /*margin-top: 0;*/
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    margin-top: -30px;
+    /*fransform: franslateY(-50%);*/
+}
+
+.member {
+    /*background: #f9829b;*/
+    font-size: 0;
+    text-align: right;
+    padding: 3px 0;
+    margin-right: -7px;
+}
+
+.member li, .member a, .member span {
+    /*background: #00ff00;*/
+    display: inline-block;
+    /*margin-left: -5px;*/
+    /*font-size: 1.4rem;*/
+    /*width: 300px;*/
+}
+
+.member a, .member span {
+    font-size: 1.4rem;
+}
+
+.member a {
+    /*background: #d2b48c;*/
+    padding: 0.5em;
+    text-decoration: none;
+    color: #38302e;
+}
+
+/*검색폼*/
+.search-form {
+    text-align: right;
+}
+
+.search-form fieldset {
+    /*background: #f9829b;*/
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+}
+
+.search-form * {
+    vertical-align: middle;
+}
+
+[type="search"] {
+    width: 450px;
+    height: 30px;
+    border: 1px solid #aaaaaa;
+    border-radius: 15px 5px 15px 5px / 5px 10px 5px 10px ;
+    padding:  0 1em;
+}
+
+.buttonSearch {
+    background: #988574;
+    border: 1px solid #aaaaaa;
+    height: 30px;
+    padding: 0 1em;
+    color: #ffffff;
+    font-size: 1.3rem;
+    border-radius: 5px ;
+}
+
+/*flex를 사용하는 방법 */
+/*.member {*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+/*.member li {*/
+/*    display: flex;*/
+/*}*/
+
+/*메인메뉴*/
+.navigation {
+    background: #988574;
+}
+
+.buttonBurger {
+    display: none;
+}
+
+.menu-list {
+    background: #ffff00;
+    margin: 0 auto;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.menu-item {
+    background: hsla(30, 50%, 50%, 0.5);
+}
+
+.menu-item:nth-child(1) {
+    float: left;
+}
+
