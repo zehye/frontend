@@ -140,7 +140,7 @@
 }
 
 .menu-list {
-    background: #ffff00;
+    /*background: #ffff00;*/
     margin: 0 auto;
     padding-left: 0;
     list-style-type: none;
@@ -148,7 +148,7 @@
 }
 
 .menu-item {
-    background: hsla(30, 50%, 50%, 0.5);
+    /*background: hsla(30, 50%, 50%, 0.5);*/
     float: left;
     color: #ffffff;
     padding-top: 1em;
@@ -173,6 +173,14 @@
 .menu-item:nth-child(n+2){
     margin-left: 104px;
 
+}
+
+.sub-menu a:hover, .sub-menu a:focus {
+    color: #ffff00;
+}
+
+.sub-menu a:focus {
+    outline: 0;
 }
 /*.menu-item:nth-child(1) {*/
 /*    float: left;*/
