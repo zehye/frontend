@@ -78,18 +78,119 @@ body{
 }
 /* 게시판 */
 .board{
-  background-color: tan;
+  /*background: yellow;*/
+  position: relative;
+}
+
+.board-list {
+  /*padding-left: 0;*/
+  list-style: none;
+}
+
+.board-list li {
+  /*background: yellow;*/
+  margin: 0.5em 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0.25em 0;
+}
+
+.board-list time {
+  /*background: pink;*/
+  margin-left: auto;
+}
+
+.board-list a {
+  /*background: skyblue;*/
+  width: calc(100% - 7em);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-more {
+  /*background: lime;*/
+  position: absolute;
+  top: 0.25em;
+  right: -1em;
+  padding: 1em;
 }
 /* 인기 사이트 */
 .favorite{
-  background-color: pink;
+  /*background-color: pink;*/
 }
+
+.favorite-list {
+    list-style: none;
+}
+
+.favorite-list li{
+  margin: 0.5em 0;
+  counter-increment: number;
+}
+
+.favorite-list li::before {
+  display: inline-block;
+  content: counter(number);
+  background: #eea60a;
+  color: #ffffff;
+  padding: 0.5em 0.75em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.favorite-list a {
+  display: inline-block;
+  padding: 0.5em 0;
+}
+
 /* 트위터 */
-.twitter{
-  background-color: teal;
+.twitter-content{
+  overflow: hidden;
+  padding-right: 22%;
+  position: relative;
 }
+.twitter-userinfo dd{
+  display: inline-block;
+  margin-left: 0;
+}
+.twitter-userprofile{
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  text-align: right;
+}
+.twitter-userprofile img{
+  border: 1px solid #181818;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+.twitter-date{
+
+  text-align: right;
+  display: block;
+}
+
 /* 푸터 */
 .footer{
-  background-color: hotpink;
-  height: 20vh;
+  padding: 2em;
+  color: white;
+  text-align: center;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.address {
+  font-style: normal;
+  margin-bottom: 0.5em;
 }

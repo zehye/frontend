@@ -23,6 +23,19 @@
 .irNews{
   background-position: 0 -230px;
 }
+
+.irBoard {
+  background-position: 0 -115px;
+}
+
+.irFavorite {
+  background-position: 0 -345px;
+}
+
+.irTwitter {
+  background-position: 0 -460px;
+}
+
 /* 메인 콘텐츠 섹션 공통 */
 .main [class*="-title"]{
   font-size: 1.8rem;
@@ -40,4 +53,16 @@
 }
 .themeYellow{
   color: #e8ca58;
+}
+
+.themeBrown {
+  color: #c7b39a;
+}
+
+.themeOrange {
+  color: #eea60a;
+}
+
+.themeSkyblue {
+  color: #6aaee6;
 }

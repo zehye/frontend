@@ -208,3 +208,20 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* 트위터 콘텐츠 영역의 최소 높이 값 지정 */
+.twitter-content{
+  min-height: 150px;
+}
+
+/*푸터 주소영역*/
+.footer {
+  text-align: left;
+}
+.address span {
+  display: block;
+}
+
+.copyright {
+  text-transform: uppercase;
+}
