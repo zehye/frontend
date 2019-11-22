@@ -1,73 +1,95 @@
 @charset "utf-8";
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
-@import "./fonts.css";
-@import url('./module/module.css');
-@import url('./module/a11y.css');
+@import url("./fonts.css");
+@import url("./module/a11y.css");
+@import url("./module/module.css");
 
-*, *::before, *::after {
-    box-sizing: border-box;
+*, *::before, *::after{
+  box-sizing: border-box;
 }
-
-a {
-    color: #ffffff;
-    text-decoration: none;
+a{
+  color: inherit;
+  text-decoration: none;
 }
-
-html {
-    font-size: 10px;
+html{
+  font-size: 10px;
 }
-
 body{
-    background-color: #ffffff;
-    font-size: 1.4rem;
-    font-family: 'Spoqa Han Sans', sans-serif;
-    font-weight: 400;
-    color: #000000;
+  background-color: #fff;
+  font-size: 1.4rem;
+  font-family: 'Spoqa Han Sans', sans-serif;
+  font-weight: 400;
+  color: #181818;
 }
-
 /* 컨테이너 */
-.container {
-    /*background-color: #c0c0c0;*/
-    display: flex;
+.container{
+  display: flex;
 }
-
-/*메인*/
-.main {
-    background-color: #0000ff;
-    height: 60vh;
-    display: flex;
-    flex-flow: row wrap;
-    /*flex-direction: row;*/
-    /*float-wrap: wrap;*/
+/* 메인 콘텐츠 */
+.main{
+  display: flex;
+  flex-flow: row wrap;
 }
-
-/*책*/
-.book {
-    background-color: #00ff00;
+/* 추천서적 */
+.book-cover{
+  text-align: center;
 }
-
-/*주요 뉴스*/
-.news {
-    background-color: #87ceed;
+.book-cover figcaption{
+  font-size: 1.5rem;
+  display: block;
+  margin: 0.5em 0;
 }
-
-/*게시판*/
-.board {
-    background-color: #d2b48c;
+.book-info{
+  text-align: center;
 }
-
-/*인기 사이트*/
-.favorite {
-    background-color: #cd919e;
+.book-info dd{
+  margin-left: 0;
 }
-
-/*트위터*/
-.twitter {
-    background-color: #008080;
+.book-info *{
+  display: inline-block;
 }
+.book-info [aria-label]{
+  display: block;
+  font-size: 2.5rem;
+}
+/* .book-info dd:nth-of-type(2){
+  display: block;
+  font-size: 2.5rem;
+} */
 
-/*푸터*/
-.footer {
-    background-color: #f9829b;
-    height: 20vh;
+/* 새소식 */
+.news-date{
+  text-align: right;
+  display: block;
+}
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/* 게시판 */
+.board{
+  background-color: tan;
+}
+/* 인기 사이트 */
+.favorite{
+  background-color: pink;
+}
+/* 트위터 */
+.twitter{
+  background-color: teal;
+}
+/* 푸터 */
+.footer{
+  background-color: hotpink;
+  height: 20vh;
 }
